@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+A simple JIRA integration that renders a list of issues assigned to you.
 
 ## Screenshot
 
@@ -10,7 +10,7 @@
 
 ## Additional Information/Notes
 
-> None
+The update set comes packaged with a Service Portal widget.
 
 ## Installation
 

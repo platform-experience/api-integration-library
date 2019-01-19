@@ -16,7 +16,7 @@
   ],
   "name": "ap-jira-integration",
   "publishing-goal": "Update set",
-  "solution-details": "",
+  "solution-details": "A simple JIRA integration that renders a list of issues assigned to you.",
   "type": "API Integration",
   "version": "1.0.0"
 }
