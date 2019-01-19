@@ -8,11 +8,12 @@
     "London"
   ],
   "contributors": [
-    "Steven Gregory"
+    "Sush Chandrashekar"
   ],
   "keywords": [
     "API",
-    "API Integration"
+    "API Integration",
+    "JIRA"
   ],
   "name": "ap-jira-integration",
   "publishing-goal": "Update set",
