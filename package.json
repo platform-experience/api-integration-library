@@ -4,7 +4,7 @@
   "description": "A collection of ServiceNow API Integrations for the Innovation Library.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./scripts/build.sh"
   },
   "keywords": [],
   "author": "",
