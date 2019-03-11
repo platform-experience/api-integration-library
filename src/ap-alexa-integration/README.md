@@ -8,7 +8,6 @@ A simple Alexa Integration with your ServiceNow Instance.
 
 ![Alexa Integration](https://raw.githubusercontent.com/platform-experience/api-integration-library/feature/src/ap-alexa-integration/images/ap-alexa-integration.png)
 
-https://github.com/platform-experience/api-integration-library/tree/feature/ap-alexa-integration/src/ap-alexa-integration
 ## Additional Information/Notes
 
 Download the step by step ServiceNow Integration with Alexa Tutorial.
