@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+A simple Alexa Integration with your ServiceNow Instance.
 
 ## Screenshot
 
@@ -10,7 +10,7 @@
 
 ## Additional Information/Notes
 
-> None
+Download the step by step ServiceNow Integration with Alexa Tutorial.
 
 ## Installation
 
