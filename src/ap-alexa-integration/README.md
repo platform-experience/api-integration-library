@@ -2,8 +2,7 @@
 
 ## Description
 
-A simple Alexa Integration with your ServiceNow Instance. Let's explote how voice assistants, such as Alexa, can be revolutionary  in the ServiceNow Platform's ability to deliver excellent customer experience. To walk through an integration, we will create a simple skill that allows a user to request a list of cases. This document provides one possible solution to the use case presented. It is intended to provide foundation to help understand the various moving parts when building an integration with Alexa. 
-
+A simple Alexa Integration with your ServiceNow Instance. Let's explote how voice assistants, such as Alexa, can be revolutionary  in the ServiceNow Platform's ability to deliver excellent customer experience. To walk through an integration, we will create a simple skill that allows a user to request a list of cases. This document provides one possible solution to the use case presented. It is intended to provide a foundational guide to help understand the interaction between ServiceNow and Alexa.
 ## Screenshot
 
 ![Alexa Integration](https://raw.githubusercontent.com/platform-experience/api-integration-library/feature/ap-alexa-integration/src/ap-alexa-integration/images/ap-alexa-integration.png)
