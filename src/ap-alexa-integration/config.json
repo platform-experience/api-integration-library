@@ -2,21 +2,12 @@
   "active": true,
   "category": "General",
   "common-name": "Alexa Integration",
-  "compatibility": [
-    "Jakarta",
-    "Kingston",
-    "London"
-  ],
-  "contributors": [
-    "Sush Chandrashekar"
-  ],
-  "keywords": [
-    "API",
-    "API Integration"
-  ],
+  "compatibility": ["Jakarta", "Kingston", "London"],
+  "contributors": ["Claudia Cruz"],
+  "keywords": ["Alexa", "API", "API Integration"],
   "name": "ap-alexa-integration",
   "publishing-goal": "Update set",
-  "solution-details": "",
+  "solution-details": "A simple Alexa Integration with your ServiceNow Instance.",
   "type": "API Integration",
   "version": "1.0.0"
 }
