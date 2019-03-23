@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "category": "General",
+  "common-name": "NICE IEX Spoke",
+  "compatibility": [
+    "Jakarta",
+    "Kingston",
+    "London"
+  ],
+  "contributors": [
+    "Jacob Shemkovitz"
+  ],
+  "keywords": [
+    "API",
+    "API Integration"
+  ],
+  "name": "ap-nice-iex-spoke",
+  "publishing-goal": "Update set",
+  "solution-details": "",
+  "type": "API Integration",
+  "version": "1.0.0"
+}
