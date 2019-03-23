@@ -3,16 +3,15 @@
   "category": "General",
   "common-name": "DocDNA Spoke",
   "compatibility": [
-    "Jakarta",
-    "Kingston",
     "London"
   ],
   "contributors": [
     "Jacob Shemkovitz"
   ],
   "keywords": [
-    "API",
-    "API Integration"
+    "IntegrationHub",
+    "Spoke",
+    "DocDNA"
   ],
   "name": "ap-docdna-spoke",
   "publishing-goal": "Update set",
