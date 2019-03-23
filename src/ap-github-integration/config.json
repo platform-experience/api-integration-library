@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "category": "General",
+  "common-name": "Github Integration",
+  "compatibility": [
+    "Jakarta",
+    "Kingston",
+    "London"
+  ],
+  "contributors": [
+    "Steven Gregory"
+  ],
+  "keywords": [
+    "API",
+    "API Integration"
+  ],
+  "name": "ap-github-integration",
+  "publishing-goal": "Update set",
+  "solution-details": "",
+  "type": "API Integration",
+  "version": "1.0.0"
+}
