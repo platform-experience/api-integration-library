@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-23 00:41:01">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>GitHub API Integration</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>73d9b862db50fb0057a7f03d0f961912</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>3ba789aadb50fb0057a7f03d0f961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_2831c5a6db50fb0057a7f03d0f961904</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.GitHubIntegration&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;GitHubIntegration&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var GitHubIntegration = Class.create();
+GitHubIntegration.prototype = {
+  initialize: function() {},
+  createIncident: function(config) {
+    var gr = new GlideRecord('incident');
+    gr.initialize();
+    gr.caller_id = config.caller;
+    gr.category = config.category;
+    gr.contact_type = config['contact-type'];
+    gr.impact = config.impact;
+    gr.short_description = config['short-description'];
+    gr.state = config.state;
+    gr.subcategory = config.subcategory;
+    gr.urgency = config.urgency;
+    gr.insert();
+  },
+  fetchEvent: function(event) {
+    return event.head_commit !== undefined
+      ? this.getContent(this.getData(event))
+      : [];
+  },
+  getData: function(data) {
+    return data ? this.setParams(data) : [];
+  },
+  getContent: function(data) {
+    try {
+      var restMessage = new sn_ws.RESTMessageV2(
+        'GitHub Content',
+        'Default GET'
+      );
+      restMessage.setStringParameter('user', data.user);
+      restMessage.setStringParameter('repo', data.repo);
+      restMessage.setStringParameter('branch', data.branch);
+      restMessage.setStringParameter('file', data.file);
+      var res = restMessage.execute();
+      var result = JSON.parse(res.getBody());
+      this.createIncident(result);
+    } catch (ex) {
+      var message = ex.getMessage();
+      gs.print(message);
+    }
+  },
+  setParams: function(data) {
+    return {
+      user: data.head_commit.author.username,
+      repo: data.repository.name,
+      branch: data.repository.master_branch,
+      file: data.head_commit.added,
+    };
+  },
+  log: function(message) {
+    gs.info('GitHub: ' + message);
+  },
+  type: 'GitHubIntegration',
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-23 00:13:21&lt;/sys_created_on&gt;&lt;sys_id&gt;2831c5a6db50fb0057a7f03d0f961904&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;GitHubIntegration&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_2831c5a6db50fb0057a7f03d0f961904&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-23 00:23:06&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1488711906</payload_hash>
+<remote_update_set display_value="GitHub API Integration">3ba789aadb50fb0057a7f03d0f961971</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>37a789aadb50fb0057a7f03d0f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a7ee01010000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<table/>
+<target_name>GitHubIntegration</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>2993012a9e50fb00957354c9dbb347a3</update_guid>
+<update_guid_history>2993012a9e50fb00957354c9dbb347a3:-1488711906,be5109a6cb50fb00b3ddcdcdb80dfca6:208023074</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_093df8e2db50fb0057a7f03d0f9619b8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>repo</name><rest_message_function display_value="Default GET">542db8e2db50fb0057a7f03d0f961928</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-03-22 23:55:13</sys_created_on><sys_id>093df8e2db50fb0057a7f03d0f9619b8</sys_id><sys_mod_count>2</sys_mod_count><sys_name>repo</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_093df8e2db50fb0057a7f03d0f9619b8</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-03-23 00:03:55</sys_updated_on><type>string</type><value>street-fighter-demo</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>2062426760</payload_hash>
+<remote_update_set display_value="GitHub API Integration">3ba789aadb50fb0057a7f03d0f961971</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>3ba789aadb50fb0057a7f03d0f961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a7dc70180000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<table/>
+<target_name>repo</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>a83ffc269150fb00c63a00eb7e41a3e4</update_guid>
+<update_guid_history>a83ffc269150fb00c63a00eb7e41a3e4:2062426760,ef3eb4268e50fb00a703c5e087e0b24f:-1170217550,c13df8e2a550fb000e6d1dd06a91e2b9:-86481480</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_ef8dbce2db50fb0057a7f03d0f9619dc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>branch</name><rest_message_function display_value="Default GET">542db8e2db50fb0057a7f03d0f961928</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-03-22 23:56:45</sys_created_on><sys_id>ef8dbce2db50fb0057a7f03d0f9619dc</sys_id><sys_mod_count>1</sys_mod_count><sys_name>branch</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_ef8dbce2db50fb0057a7f03d0f9619dc</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-03-22 23:59:49</sys_updated_on><type>string</type><value>master</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-968479197</payload_hash>
+<remote_update_set display_value="GitHub API Integration">3ba789aadb50fb0057a7f03d0f961971</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>73a789aadb50fb0057a7f03d0f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a7d8ad7d0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<table/>
+<target_name>branch</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>944eb426c850fb002f53919585bab753</update_guid>
+<update_guid_history>944eb426c850fb002f53919585bab753:-968479197,6b8dfce2fc50fb0069f988ccc9ed607f:-1023890120</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_542db8e2db50fb0057a7f03d0f961928</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user>steven.gregory</basic_auth_user><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>GitHub Content [ Default GET ]</qualified_name><rest_endpoint>https://raw.githubusercontent.com/${user}/${repo}/${branch}/${file}</rest_endpoint><rest_message display_value="GitHub Content">a09c74e2db50fb0057a7f03d0f961928</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-03-22 23:54:54</sys_created_on><sys_id>542db8e2db50fb0057a7f03d0f961928</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_542db8e2db50fb0057a7f03d0f961928</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-03-22 23:56:19</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>1823533241</payload_hash>
+<remote_update_set display_value="GitHub API Integration">3ba789aadb50fb0057a7f03d0f961971</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>77a789aadb50fb0057a7f03d0f961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a7d579b80000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<table/>
+<target_name>Default GET</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>0d7dbce2ef50fb00682eece991757717</update_guid>
+<update_guid_history>0d7dbce2ef50fb00682eece991757717:1823533241,703df8e27550fb00ea6a4bd95599f477:-1335381811,182db8e25250fb0048655e8eef788229:1088381418</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_a09c74e2db50fb0057a7f03d0f961928</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message"><sys_rest_message action="INSERT_OR_UPDATE"><access>package_private</access><authentication_type>no_authentication</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description/><name>GitHub Content</name><oauth2_profile/><protocol_name/><rest_endpoint>https://raw.githubusercontent.com/${user}/${repo}/${branch}/${file}</rest_endpoint><sys_class_name>sys_rest_message</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-03-22 23:54:54</sys_created_on><sys_id>a09c74e2db50fb0057a7f03d0f961928</sys_id><sys_mod_count>1</sys_mod_count><sys_name>GitHub Content</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_a09c74e2db50fb0057a7f03d0f961928</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-03-22 23:56:32</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mutual_auth>false</use_mutual_auth></sys_rest_message></record_update>]]></payload>
+<payload_hash>1181192331</payload_hash>
+<remote_update_set display_value="GitHub API Integration">3ba789aadb50fb0057a7f03d0f961971</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>7fa789aadb50fb0057a7f03d0f961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a7d5abd00000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<table/>
+<target_name>GitHub Content</target_name>
+<type>REST Message</type>
+<update_domain>global</update_domain>
+<update_guid>d88dbce23750fb00a09440a5bf599739</update_guid>
+<update_guid_history>d88dbce23750fb00a09440a5bf599739:1181192331,182db8e26b50fb007516aa4cb2dcf32a:-1077479677</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_2170cd66db50fb0057a7f03d0f9619a5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;POST&lt;/http_method&gt;&lt;name&gt;Event&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+  var gitHubHelper = new GitHubIntegration();
+  gitHubHelper.fetchEvent(request.body.data);
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/snc/github_inbound/event&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/event&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;false&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-23 00:12:07&lt;/sys_created_on&gt;&lt;sys_id&gt;2170cd66db50fb0057a7f03d0f9619a5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Event&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_2170cd66db50fb0057a7f03d0f9619a5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-23 00:12:07&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="GitHub Inbound"&gt;fecf3866db50fb0057a7f03d0f961949&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<payload_hash>916710969</payload_hash>
+<remote_update_set display_value="GitHub API Integration">3ba789aadb50fb0057a7f03d0f961971</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>bba789aadb50fb0057a7f03d0f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a7e3f25e0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<table/>
+<target_name>Event</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_guid>241101a68750fb00f233c9f57b3c1875</update_guid>
+<update_guid_history>241101a68750fb00f233c9f57b3c1875:916710969</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_4d3df8e2db50fb0057a7f03d0f9619b9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>user</name><rest_message_function display_value="Default GET">542db8e2db50fb0057a7f03d0f961928</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-03-22 23:55:13</sys_created_on><sys_id>4d3df8e2db50fb0057a7f03d0f9619b9</sys_id><sys_mod_count>3</sys_mod_count><sys_name>user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_4d3df8e2db50fb0057a7f03d0f9619b9</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-03-23 00:04:01</sys_updated_on><type>string</type><value>stevengregory</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-203496105</payload_hash>
+<remote_update_set display_value="GitHub API Integration">3ba789aadb50fb0057a7f03d0f961971</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>bfa789aadb50fb0057a7f03d0f961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a7dc88b70000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<table/>
+<target_name>user</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>823f30661550fb00e526abfc5b02eac2</update_guid>
+<update_guid_history>823f30661550fb00e526abfc5b02eac2:-203496105,5cbef8263a50fb00c768490ee6feeb45:1121381569,bd5eb4260b50fb003f46f5cc0a964056:-203496105,093df8e2c450fb00c0ced292ec7e21ba:678342296</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_fecf3866db50fb0057a7f03d0f961949</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/github_inbound</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>false</is_versioned><name>GitHub Inbound</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>github_inbound</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-03-23 00:07:25</sys_created_on><sys_id>fecf3866db50fb0057a7f03d0f961949</sys_id><sys_mod_count>1</sys_mod_count><sys_name>GitHub Inbound</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_fecf3866db50fb0057a7f03d0f961949</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-03-23 00:08:48</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<payload_hash>-1653038068</payload_hash>
+<remote_update_set display_value="GitHub API Integration">3ba789aadb50fb0057a7f03d0f961971</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>f7a789aadb50fb0057a7f03d0f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a7e0e91d0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<table/>
+<target_name>GitHub Inbound</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_guid>8050c9661850fb00257ace2af24e2d2e</update_guid>
+<update_guid_history>8050c9661850fb00257ace2af24e2d2e:-1653038068,b3fff466a350fb00746f18336c985c24:81776524</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_0d3df8e2db50fb0057a7f03d0f9619b6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>file</name><rest_message_function display_value="Default GET">542db8e2db50fb0057a7f03d0f961928</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-03-22 23:55:13</sys_created_on><sys_id>0d3df8e2db50fb0057a7f03d0f9619b6</sys_id><sys_mod_count>2</sys_mod_count><sys_name>file</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_0d3df8e2db50fb0057a7f03d0f9619b6</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-03-23 00:03:46</sys_updated_on><type>string</type><value>.travis.yml</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-205561328</payload_hash>
+<remote_update_set display_value="GitHub API Integration">3ba789aadb50fb0057a7f03d0f961971</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-03-23 00:41:00</sys_created_on>
+<sys_id>fba789aadb50fb0057a7f03d0f961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a7dc4d790000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-03-23 00:41:00</sys_updated_on>
+<table/>
+<target_name>file</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>9e2f3066d050fb009004bbe1aea84935</update_guid>
+<update_guid_history>9e2f3066d050fb009004bbe1aea84935:-205561328,bd2e74267050fb008594f4c7be1a9809:1805434769,4d3df8e23250fb00e9f7df8777e70ab7:588360824</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
