@@ -30,4 +30,12 @@ Download and install update set **[ap-nice-iex-spoke.u-update-set.xml](https://g
 
 ## Configuration
 
-> None
+### System Properties
+
+#### Credentials
+
+* x_snc_docdna_spoke.docdna.**username**
+* x_snc_docdna_spoke.docdna.**password**
+* x_snc_docdna_spoke.docdna.**customer_name**
+* x_snc_docdna_spoke.docdna.**production** – Use production credentials?
+* x_snc_docdna_spoke.docdna.**mid_server** – MID server name
