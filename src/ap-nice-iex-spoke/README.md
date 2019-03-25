@@ -4,11 +4,11 @@
 
 IEX is a [NICE](https://www.nice.com/engage/workforce-optimization/workforce-management) Workforce Management solution. Included in this integration is a set of actions usable in Flow Designer to access or import agent data from IEX. The actions make use of a central script include 'IEX' to route SOAP calls.
 
-## Screenshot
-
-![NICE IEX Spoke](https://raw.githubusercontent.com/platform-experience/api-integration-library/master/src/ap-nice-iex-spoke/images/ap-nice-iex-spoke-actions.png)
+![NICE IEX Spoke](https://raw.githubusercontent.com/platform-experience/api-integration-library/master/src/ap-nice-iex-spoke/images/ap-nice-iex-spoke.png)
 
 ## Additional Information/Notes
+
+![NICE IEX Spoke](https://raw.githubusercontent.com/platform-experience/api-integration-library/master/src/ap-nice-iex-spoke/images/ap-nice-iex-spoke-actions.png)
 
 ### Available Actions
 
