@@ -3,20 +3,20 @@
   "category": "General",
   "common-name": "NICE IEX Spoke",
   "compatibility": [
-    "Jakarta",
-    "Kingston",
     "London"
   ],
   "contributors": [
-    "Jacob Shemkovitz"
+    "Jacob Shemkovitz",
+    "Darrin Achtman",
+    "Jimmy Yuan"
   ],
   "keywords": [
-    "API",
-    "API Integration"
+    "IntegrationHub",
+    "Spoke"
   ],
   "name": "ap-nice-iex-spoke",
   "publishing-goal": "Update set",
-  "solution-details": "",
+  "solution-details": "A set of flow actions for workforce management solution IEX.",
   "type": "API Integration",
   "version": "1.0.0"
 }
