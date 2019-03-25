@@ -22,4 +22,25 @@ Download and install update set **[ap-docdna-spoke.u-update-set.xml](https://git
 
 ## Configuration
 
-> None
+### System Properties
+
+#### Variables for data fields in DocDNA
+
+* **Claim Number**: x_snc_docdna_spoke.docdna.**claim_num_var**
+* **Case Number**: x_snc_docdna_spoke.docdna.**case_num_var**
+* **Case Date**: x_snc_docdna_spoke.docdna.**case_date_var**
+* **ID for Caller**: x_snc_docdna_spoke.docdna.**caller_id_var**
+* **ID for Document**: x_snc_docdna_spoke.docdna.**doc_id_var**
+* **Content Date**: x_snc_docdna_spoke.docdna.**content_date_var**
+* **Folder**: x_snc_docdna_spoke.docdna.**folder_var**
+
+#### Credentials
+
+* x_snc_docdna_spoke.docdna.**endpoint**
+* x_snc_docdna_spoke.docdna.**username**
+* x_snc_docdna_spoke.docdna.**password**
+* x_snc_docdna_spoke.docdna.**production_endpoint**
+* x_snc_docdna_spoke.docdna.**production_username**
+* x_snc_docdna_spoke.docdna.**production_password**
+* x_snc_docdna_spoke.docdna.**production** – Use production credentials?
+* x_snc_docdna_spoke.docdna.**rpt_id** – Report ID
