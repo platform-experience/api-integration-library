@@ -2,15 +2,11 @@
 
 ## Description
 
-A set of Flow Actions to be used in Flow Designer for integration with ['Document DNA'](https://www.exelatech.com/product/document-dna%C2%AE), a document management solution. The actions make use of a central script include to route SOAP calls.
-
-## Screenshot
+A set of Flow Actions to be used in Flow Designer for integration with [Document DNA](https://www.exelatech.com/product/document-dna%C2%AE), a document management solution. The actions make use of a central script include to route SOAP calls.
 
 ![DocDNA Spoke Actions](https://raw.githubusercontent.com/platform-experience/api-integration-library/master/src/ap-docdna-spoke/images/ap-docdna-spoke-actions.png)
 
-## Additional Information/Notes
-
-### Available Actions
+## Available Actions
 
 * **Query Documents** (by Case Number, Claim Number, Caller ID) returns JSON results & count
 * **Get Document** (by Document ID) returns document details JSON, filename, and base64 file
