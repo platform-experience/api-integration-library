@@ -22,25 +22,21 @@ Note: this integration will operate only with public GitHub repositories.
 
    **[ap-github-integration.u-update-set.xml](https://github.com/platform-experience/api-integration-library/blob/master/src/ap-github-integration/ap-github-integration.u-update-set.xml)**
 
-   > Directions on loading an update set from the SN product documentation. [Load a customization from a single XML file](https://docs.servicenow.com/bundle/london-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+   Directions on loading an update set from the SN product documentation. [Load a customization from a single XML file](https://docs.servicenow.com/bundle/madrid-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html#t_LoadCustomizationsFromAnXMLFile)
 
 ### GitHub Setup
 
-1. Setup a new repository
+1. Setup a new repository or use an existing one
 
 1. [Create GitHub webhook](https://developer.github.com/webhooks/creating/)
 
 1. Webhook configuration
 
-   Set the Payload URL for the target instance.
+   Set the Payload URL for the target instance. Make sure to update the example instance name and remove the curly braces.
 
-   ```bash
-   https://{example.service-now.com}/api/snc/github_inbound/event
-   ```
+   `https://{example.service-now.com}/api/snc/github_inbound/event`
 
-   > Make sure to update the example instance name and remove the curly braces.
-
-   The content type will be `application/json`, set `Enable SSL verification`, select `Just the push event` and make sure the webhook is active.
+   The content type will be **application/json**, set **Enable SSL verification**, select **Just the push event** and make sure the webhook is active.
 
 ### JSON Config
 
@@ -50,7 +46,7 @@ Note: this integration will operate only with public GitHub repositories.
    touch incident.json
    ```
 
-   > The name can be anything as long as the extension is `.json`.
+   The name can be anything as long as the extension is `.json`.
 
 1. Create a minimal or complete JSON incident configuration
 
@@ -81,7 +77,7 @@ Note: this integration will operate only with public GitHub repositories.
 
 ### GitHub Push
 
-> Sample git workflow to push changes and generate an incident.
+Sample git workflow to push changes and generate an incident.
 
 1. Add the file
 
