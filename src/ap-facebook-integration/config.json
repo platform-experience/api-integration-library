@@ -5,18 +5,20 @@
   "compatibility": [
     "Jakarta",
     "Kingston",
-    "London"
+    "London",
+    "Madrid"
   ],
   "contributors": [
-    "brian"
+    "Brian Clauzel"
   ],
   "keywords": [
     "API",
-    "API Integration"
+    "API Integration",
+    "Facebook"
   ],
   "name": "ap-facebook-integration",
   "publishing-goal": "Update set",
-  "solution-details": "",
+  "solution-details": "A simple Facebook integration for creating a Case and Social Log record when a user posts something public to a facebook page",
   "type": "API Integration",
   "version": "1.0.0"
 }

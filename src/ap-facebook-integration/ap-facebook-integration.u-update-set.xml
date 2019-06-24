@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-06-24 21:11:05">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Brian's Facebook Integration</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>b933d874db9ef30094407f6bbf961921</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>brian.c</sys_created_by>
+<sys_created_on>2019-06-24 21:11:05</sys_created_on>
+<sys_id>0d1d9c30db12370094407f6bbf96197a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>brian.c</sys_updated_by>
+<sys_updated_on>2019-06-24 21:11:05</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_7cb458b4db9ef30094407f6bbf9619cb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.FacebookVisitorPostService&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Facebook API GET messages&lt;/description&gt;&lt;name&gt;FacebookVisitorPostService&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var FacebookVisitorPostService = Class.create();
+FacebookVisitorPostService.prototype = {
+    initialize: function() {
+		try { 
+			var r = new sn_ws.RESTMessageV2('Facebook Integration', 'Default GET');
+
+			var response = r.execute();
+			var responseBody = response.getBody();
+			var httpStatus = response.getStatusCode();
+			var result = JSON.parse(responseBody);
+			//gs.info(JSON.stringify(result));
+			this.result = result;
+
+		}
+		catch(ex) {
+			var message = ex.message;
+			gs.info(ex.message);
+		}
+    },
+	getPosts: function() {
+		return this.result;
+	},
+
+    type: 'FacebookVisitorPostService'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;brian.c&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-24 20:36:19&lt;/sys_created_on&gt;&lt;sys_id&gt;7cb458b4db9ef30094407f6bbf9619cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;FacebookVisitorPostService&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_7cb458b4db9ef30094407f6bbf9619cb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;brian.c&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-24 21:01:00&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>486275630</payload_hash>
+<remote_update_set display_value="Brian's Facebook Integration">0d1d9c30db12370094407f6bbf96197a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>brian.c</sys_created_by>
+<sys_created_on>2019-06-24 21:11:05</sys_created_on>
+<sys_id>091d9c30db12370094407f6bbf96197c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b4ac00e0000001</sys_recorded_at>
+<sys_updated_by>brian.c</sys_updated_by>
+<sys_updated_on>2019-06-24 21:11:05</sys_updated_on>
+<table/>
+<target_name>FacebookVisitorPostService</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>e5ca94fceddef3004a3b44e7a525265e</update_guid>
+<update_guid_history>e5ca94fceddef3004a3b44e7a525265e:486275630,0425d0b4369ef300b82adaeb66b243eb:-734147832</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_headers_2ed350b4db9ef30094407f6bbf961992</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Content-Type</name><rest_message_function display_value="Default GET">33c3dc74db9ef30094407f6bbf9619ab</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>brian.c</sys_created_by><sys_created_on>2019-06-24 20:31:29</sys_created_on><sys_id>2ed350b4db9ef30094407f6bbf961992</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Content-Type</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_2ed350b4db9ef30094407f6bbf961992</sys_update_name><sys_updated_by>brian.c</sys_updated_by><sys_updated_on>2019-06-24 20:31:29</sys_updated_on><value>application/json</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>-2091582222</payload_hash>
+<remote_update_set display_value="Brian's Facebook Integration">0d1d9c30db12370094407f6bbf96197a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>brian.c</sys_created_by>
+<sys_created_on>2019-06-24 21:11:05</sys_created_on>
+<sys_id>0d1d9c30db12370094407f6bbf96197b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b2fbcf00000001</sys_recorded_at>
+<sys_updated_by>brian.c</sys_updated_by>
+<sys_updated_on>2019-06-24 21:11:05</sys_updated_on>
+<table/>
+<target_name>Content-Type</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>5104d0b4d79ef300dd44a2da6184df6c</update_guid>
+<update_guid_history>5104d0b4d79ef300dd44a2da6184df6c:-2091582222</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_7ca31c74db9ef30094407f6bbf96194d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message"><sys_rest_message action="INSERT_OR_UPDATE"><access>package_private</access><authentication_type>no_authentication</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description/><name>Facebook Integration</name><oauth2_profile/><protocol_name/><rest_endpoint>https://graph.facebook.com/v3.3/214309025254648/visitor_posts</rest_endpoint><sys_class_name>sys_rest_message</sys_class_name><sys_created_by>brian.c</sys_created_by><sys_created_on>2019-06-24 20:30:34</sys_created_on><sys_id>7ca31c74db9ef30094407f6bbf96194d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Facebook Integration</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_7ca31c74db9ef30094407f6bbf96194d</sys_update_name><sys_updated_by>brian.c</sys_updated_by><sys_updated_on>2019-06-24 20:30:34</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mutual_auth>false</use_mutual_auth></sys_rest_message></record_update>]]></payload>
+<payload_hash>-1915497949</payload_hash>
+<remote_update_set display_value="Brian's Facebook Integration">0d1d9c30db12370094407f6bbf96197a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>brian.c</sys_created_by>
+<sys_created_on>2019-06-24 21:11:05</sys_created_on>
+<sys_id>411d9c30db12370094407f6bbf96197b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b2ee5f00000001</sys_recorded_at>
+<sys_updated_by>brian.c</sys_updated_by>
+<sys_updated_on>2019-06-24 21:11:05</sys_updated_on>
+<table/>
+<target_name>Facebook Integration</target_name>
+<type>REST Message</type>
+<update_domain>global</update_domain>
+<update_guid>33c3dc74679ef3002f4cb100ea0c62ad</update_guid>
+<update_guid_history>33c3dc74679ef3002f4cb100ea0c62ad:-1915497949</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_3ce8d87cdbdef30094407f6bbf961949</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;sn_app_cs_social_social_log&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Create Case on Social Log Insert &lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var text = current.message;
+
+	// Create sn_customerservice_case
+		var grCase = new GlideRecord('sn_customerservice_case');
+		grCase.initialize();
+		grCase.setValue('contact_type', 'social');
+		grCase.setValue('sn_app_cs_social_social_profile', current.social_profile);
+		grCase.setValue('consumer', current.social_profile.consumer);
+		grCase.setValue('account', current.social_profile.account);
+		if (text.indexOf('.') != -1) {
+			grCase.setValue('short_description', text.slice(0, text.indexOf('. ')+1));
+		} else {
+			grCase.setValue('short_description', text);			
+		}
+		grCase.setValue('description', text);
+		current.document = grCase.insert();
+
+	
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;brian.c&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-24 21:00:28&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3ce8d87cdbdef30094407f6bbf961949&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Case on Social Log Insert &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_3ce8d87cdbdef30094407f6bbf961949&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;brian.c&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-24 21:00:28&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3ce8d87cdbdef30094407f6bbf961949"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>245472166</payload_hash>
+<remote_update_set display_value="Brian's Facebook Integration">0d1d9c30db12370094407f6bbf96197a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>brian.c</sys_created_by>
+<sys_created_on>2019-06-24 21:11:05</sys_created_on>
+<sys_id>451d9c30db12370094407f6bbf96197c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b4a438c0000001</sys_recorded_at>
+<sys_updated_by>brian.c</sys_updated_by>
+<sys_updated_on>2019-06-24 21:11:05</sys_updated_on>
+<table>sn_app_cs_social_social_log</table>
+<target_name>Create Case on Social Log Insert </target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>f5aa14fc0edef3006e94214d3c8226cf</update_guid>
+<update_guid_history>f5aa14fc0edef3006e94214d3c8226cf:245472166</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_33c3dc74db9ef30094407f6bbf9619ab</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Facebook Integration [ Default GET ]</qualified_name><rest_endpoint>https://graph.facebook.com/v3.3/214309025254648/visitor_posts</rest_endpoint><rest_message display_value="Facebook Integration">7ca31c74db9ef30094407f6bbf96194d</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>brian.c</sys_created_by><sys_created_on>2019-06-24 20:30:34</sys_created_on><sys_id>33c3dc74db9ef30094407f6bbf9619ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_33c3dc74db9ef30094407f6bbf9619ab</sys_update_name><sys_updated_by>brian.c</sys_updated_by><sys_updated_on>2019-06-24 20:30:34</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>1229545077</payload_hash>
+<remote_update_set display_value="Brian's Facebook Integration">0d1d9c30db12370094407f6bbf96197a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>brian.c</sys_created_by>
+<sys_created_on>2019-06-24 21:11:05</sys_created_on>
+<sys_id>491d9c30db12370094407f6bbf96197b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b2ee5d80000001</sys_recorded_at>
+<sys_updated_by>brian.c</sys_updated_by>
+<sys_updated_on>2019-06-24 21:11:05</sys_updated_on>
+<table/>
+<target_name>Default GET</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>33c3dc74289ef300d8014945edcdd7ac</update_guid>
+<update_guid_history>33c3dc74289ef300d8014945edcdd7ac:1229545077</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_param_defs_cce31c74db9ef30094407f6bbf961954</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs"><sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE"><name>access_token</name><order>100</order><rest_message_function display_value="Default GET">33c3dc74db9ef30094407f6bbf9619ab</rest_message_function><sys_class_name>sys_rest_message_fn_param_defs</sys_class_name><sys_created_by>brian.c</sys_created_by><sys_created_on>2019-06-24 20:31:29</sys_created_on><sys_id>cce31c74db9ef30094407f6bbf961954</sys_id><sys_mod_count>0</sys_mod_count><sys_name>access_token</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_param_defs_cce31c74db9ef30094407f6bbf961954</sys_update_name><sys_updated_by>brian.c</sys_updated_by><sys_updated_on>2019-06-24 20:31:29</sys_updated_on><value>EAAhaCs0otTUBAMjsodW3CyyDep7LWWxr8C7eGoZA8EEomLTwjZAKnvQde2RJl6L02EZBf9NmCJ9znQhEc4DNAWF7bJaQNGUnHinZBhuR15XH4JRPo49aXbyBiMbwZB5Tz6vfzSaGpAyFMsSk5ZBube5iVbooPNOtU6ZCsx0ZCZCXxtwZDZD</value></sys_rest_message_fn_param_defs></record_update>]]></payload>
+<payload_hash>916105021</payload_hash>
+<remote_update_set display_value="Brian's Facebook Integration">0d1d9c30db12370094407f6bbf96197a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>brian.c</sys_created_by>
+<sys_created_on>2019-06-24 21:11:05</sys_created_on>
+<sys_id>811d9c30db12370094407f6bbf96197c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b2fbca60000001</sys_recorded_at>
+<sys_updated_by>brian.c</sys_updated_by>
+<sys_updated_on>2019-06-24 21:11:05</sys_updated_on>
+<table/>
+<target_name>access_token</target_name>
+<type>HTTP Query Parameters</type>
+<update_domain>global</update_domain>
+<update_guid>5504d0b4d69ef3007b5aa6e371d5636a</update_guid>
+<update_guid_history>5504d0b4d69ef3007b5aa6e371d5636a:916105021</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_param_defs_6ed350b4db9ef30094407f6bbf961992</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs"><sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE"><name>fields</name><order>100</order><rest_message_function display_value="Default GET">33c3dc74db9ef30094407f6bbf9619ab</rest_message_function><sys_class_name>sys_rest_message_fn_param_defs</sys_class_name><sys_created_by>brian.c</sys_created_by><sys_created_on>2019-06-24 20:31:29</sys_created_on><sys_id>6ed350b4db9ef30094407f6bbf961992</sys_id><sys_mod_count>0</sys_mod_count><sys_name>fields</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_param_defs_6ed350b4db9ef30094407f6bbf961992</sys_update_name><sys_updated_by>brian.c</sys_updated_by><sys_updated_on>2019-06-24 20:31:29</sys_updated_on><value>create_time,message</value></sys_rest_message_fn_param_defs></record_update>]]></payload>
+<payload_hash>211189166</payload_hash>
+<remote_update_set display_value="Brian's Facebook Integration">0d1d9c30db12370094407f6bbf96197a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>brian.c</sys_created_by>
+<sys_created_on>2019-06-24 21:11:05</sys_created_on>
+<sys_id>cd1d9c30db12370094407f6bbf96197b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b2fbc720000001</sys_recorded_at>
+<sys_updated_by>brian.c</sys_updated_by>
+<sys_updated_on>2019-06-24 21:11:05</sys_updated_on>
+<table/>
+<target_name>fields</target_name>
+<type>HTTP Query Parameters</type>
+<update_domain>global</update_domain>
+<update_guid>1d04d0b4769ef3005f37eaa7aa82bc68</update_guid>
+<update_guid_history>1d04d0b4769ef3005f37eaa7aa82bc68:211189166</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
