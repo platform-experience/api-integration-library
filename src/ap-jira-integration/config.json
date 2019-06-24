@@ -1,23 +1,24 @@
 {
   "active": true,
   "category": "General",
-  "common-name": "JIRA Integration",
+  "common-name": "Twilio Integration",
   "compatibility": [
-    "Jakarta",
     "Kingston",
-    "London"
+    "London",
+    "Madrid"
   ],
   "contributors": [
-    "Sush Chandrashekar"
+    "Brian Clauzel"
   ],
   "keywords": [
     "API",
     "API Integration",
-    "JIRA"
+    "Notify",
+    "Twilio"  
   ],
-  "name": "ap-jira-integration",
+  "name": "notify-twilio-integration",
   "publishing-goal": "Update set",
-  "solution-details": "A simple JIRA integration that renders a list of issues assigned to you.",
+  "solution-details": "A simple Twilio integration that renders a button that allows you to send a text message notifcation.",
   "type": "API Integration",
   "version": "1.0.0"
 }

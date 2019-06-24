@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "category": "General",
+  "common-name": "Facebook Integration",
+  "compatibility": [
+    "Jakarta",
+    "Kingston",
+    "London"
+  ],
+  "contributors": [
+    "brian"
+  ],
+  "keywords": [
+    "API",
+    "API Integration"
+  ],
+  "name": "ap-facebook-integration",
+  "publishing-goal": "Update set",
+  "solution-details": "",
+  "type": "API Integration",
+  "version": "1.0.0"
+}
