@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> A simple Twitter Integration for creating a record in the Customer Service Social Log table when a user tweets using a given hashtag.
 
 ## Screenshot
 
@@ -10,7 +10,8 @@
 
 ## Additional Information/Notes
 
-> None
+Download the step by step ServiceNow Integration with Twitter **[ap-alexa-integration-tutorial.pdf](https://raw.githubusercontent.com/platform-experience/api-integration-library/master/src/ap-twitter-integration/docs/ap-twitter-integration-tutorial.pdf)**
+
 
 ## Installation
 
