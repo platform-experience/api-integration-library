@@ -1,11 +1,20 @@
 {
   "active": true,
   "category": "General",
-  "common-name": "Alexa Integration",
-  "compatibility": ["Jakarta", "Kingston", "London"],
-  "contributors": ["Claudia Cruz"],
-  "keywords": ["Alexa", "API", "API Integration"],
-  "name": "ap-alexa-integration",
+  "common-name": "Twitter Integration",
+  "compatibility": [
+    "London",
+    "Madrid",
+    "New York"
+  ],
+  "contributors": [
+    "Claudia Cruz"
+  ],
+  "keywords": [
+    "API",
+    "API Integration"
+  ],
+  "name": "ap-twitter-integration",
   "publishing-goal": "Update set",
   "solution-details": "A simple Twitter integration for creating a record in the Customer Service Social Log table when a user tweets using a given hashtag.",
   "type": "API Integration",

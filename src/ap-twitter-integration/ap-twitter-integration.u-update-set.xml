@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-09-26 19:55:59">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Twitter Integration</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>25de3a22dbc00c10ca1da0da4b961975</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>ed515007dbc48c10ca1da0da4b96193d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_twitter_hashtag_u_hashtag</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_hashtag" table="u_twitter_hashtag"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Hashtag&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_hashtag&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;u_twitter_hashtag&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;claudia.cruz&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-26 19:06:47&lt;/sys_created_on&gt;&lt;sys_id&gt;97f5c8cfdb448c10ca1da0da4b961926&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hashtag&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_twitter_hashtag_u_hashtag&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;claudia.cruz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-26 19:06:47&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1178615184</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>21515007dbc48c10ca1da0da4b96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef7fac80000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>Twitter Hashtag.Hashtag</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>c51640039b848c10f1867f39fc19df1f</update_guid>
+<update_guid_history>c51640039b848c10f1867f39fc19df1f:1178615184,4916000363848c109aad86e620bf10ef:1178615184</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_application_23e508cfdb448c10ca1da0da4b961960</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Twitter Hashtag</name><order/><roles>u_twitter_hashtag_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>23e508cfdb448c10ca1da0da4b961960</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Twitter Hashtag</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_application_23e508cfdb448c10ca1da0da4b961960</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:08</sys_updated_on></sys_ui_application></record_update>]]></payload>
+<payload_hash>-1540587253</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>21515007dbc48c10ca1da0da4b961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef75ffd0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>Twitter Hashtag</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>ebe508cf74448c1088deb78951a30b61</update_guid>
+<update_guid_history>ebe508cf74448c1088deb78951a30b61:-1540587253</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_5fe5c4cfdb448c10ca1da0da4b9619f4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Twitter Hashtag</name><order>100</order><roles>u_twitter_hashtag_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5fe5c4cfdb448c10ca1da0da4b9619f4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Twitter Hashtag</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_5fe5c4cfdb448c10ca1da0da4b9619f4</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:08</sys_updated_on><title>Twitter Hashtag</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>-632013180</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>25515007dbc48c10ca1da0da4b96193e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef75f230000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>Twitter Hashtag</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>9be5c4cfa4448c10ae74fdb0112902f7</update_guid>
+<update_guid_history>9be5c4cfa4448c10ae74fdb0112902f7:-632013180</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_7fe508cfdb448c10ca1da0da4b96197e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:09</sys_created_on><sys_id>7fe508cfdb448c10ca1da0da4b96197e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag.u_twitter_hashtag_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_twitter_hashtag">77e508cfdb448c10ca1da0da4b96197a</sys_security_acl><sys_update_name>sys_security_acl_role_7fe508cfdb448c10ca1da0da4b96197e</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:09</sys_updated_on><sys_user_role display_value="u_twitter_hashtag_user" name="u_twitter_hashtag_user">8be544cfdb448c10ca1da0da4b961909</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1908953739</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>25515007dbc48c10ca1da0da4b961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef764110000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>u_twitter_hashtag.u_twitter_hashtag_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>77e508cf08448c109957c76b64c81782</update_guid>
+<update_guid_history>77e508cf08448c109957c76b64c81782:-1908953739</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_6fe508cfdb448c10ca1da0da4b961965</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_twitter_hashtag</description><name>u_twitter_hashtag</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:09</sys_created_on><sys_id>6fe508cfdb448c10ca1da0da4b961965</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_6fe508cfdb448c10ca1da0da4b961965</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:09</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>90786550</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>29515007dbc48c10ca1da0da4b961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef762500000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>u_twitter_hashtag</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e3e508cfa7448c108ceedd19cf34c96b</update_guid>
+<update_guid_history>e3e508cfa7448c108ceedd19cf34c96b:90786550</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_0da263b2db808c10ca1da0da4b961969</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>q</name><rest_message_function display_value="get">ee596e00eb12310065deac6aa206fe92</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 16:32:07</sys_created_on><sys_id>0da263b2db808c10ca1da0da4b961969</sys_id><sys_mod_count>3</sys_mod_count><sys_name>q</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_0da263b2db808c10ca1da0da4b961969</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 16:36:28</sys_updated_on><type>string</type><value>#servicenow19</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-304177144</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>2d515007dbc48c10ca1da0da4b96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6e6e57f70000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>q</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>07a36ff2a2808c10bc08e66e2d841959</update_guid>
+<update_guid_history>07a36ff2a2808c10bc08e66e2d841959:-304177144,7d83abf202808c101e89be111ce264dd:-532632118,b343e3f2d6808c106a8e2c800d85ca82:1690659279,dfa2a3b23c808c1099763295e209e324:928717706</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_08f508cfdb448c10ca1da0da4b9619a2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_twitter_hashtag</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:10</sys_created_on><sys_id>08f508cfdb448c10ca1da0da4b9619a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_08f508cfdb448c10ca1da0da4b9619a2</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:10</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>1357310426</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>2d515007dbc48c10ca1da0da4b961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef7683a0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>u_twitter_hashtag</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>c0f508cffb448c108ccdc8314f4db7a4</update_guid>
+<update_guid_history>c0f508cffb448c108ccdc8314f4db7a4:1357310426</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_3fe508cfdb448c10ca1da0da4b961987</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:09</sys_created_on><sys_id>3fe508cfdb448c10ca1da0da4b961987</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag.u_twitter_hashtag_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_twitter_hashtag">37e508cfdb448c10ca1da0da4b961983</sys_security_acl><sys_update_name>sys_security_acl_role_3fe508cfdb448c10ca1da0da4b961987</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:09</sys_updated_on><sys_user_role display_value="u_twitter_hashtag_user" name="u_twitter_hashtag_user">8be544cfdb448c10ca1da0da4b961909</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1112452074</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>61515007dbc48c10ca1da0da4b961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef764940000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>u_twitter_hashtag.u_twitter_hashtag_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>37e508cf86448c100cda8d7b16f8178b</update_guid>
+<update_guid_history>37e508cf86448c100cda8d7b16f8178b:1112452074</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_37e508cfdb448c10ca1da0da4b961983</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_twitter_hashtag</description><name>u_twitter_hashtag</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:09</sys_created_on><sys_id>37e508cfdb448c10ca1da0da4b961983</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_37e508cfdb448c10ca1da0da4b961983</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:09</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1206244308</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>65515007dbc48c10ca1da0da4b961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef7644b0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>u_twitter_hashtag</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>7fe508cfe3448c10d467d9083cd8bc86</update_guid>
+<update_guid_history>7fe508cfe3448c10d467d9083cd8bc86:1206244308</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_ee596e00eb12310065deac6aa206fe92</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>get</function_name><http_method/><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Get Twitter Search [ get ]</qualified_name><rest_endpoint>https://api.twitter.com/1.1/search/tweets.json</rest_endpoint><rest_message display_value="Get Twitter Search">54e82e00eb12310065deac6aa206fe7c</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-02-13 05:59:15</sys_created_on><sys_id>ee596e00eb12310065deac6aa206fe92</sys_id><sys_mod_count>1</sys_mod_count><sys_name>get</sys_name><sys_package display_value="Performance Analytics - Example - Twitter" source="com.snc.pa.twitter">2f17a662db000c10ca1da0da4b961997</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_ee596e00eb12310065deac6aa206fe92</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 16:33:03</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>1866301483</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>69515007dbc48c10ca1da0da4b96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6e6b385d0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>get</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>01e267b2ba808c1064ac8fb7a2067156</update_guid>
+<update_guid_history>01e267b2ba808c1064ac8fb7a2067156:1866301483,0de267b2ab808c103de3f7ad4bb5cd54:-1541026163</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_8be544cfdb448c10ca1da0da4b961909</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>u_twitter_hashtag_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:07</sys_created_on><sys_id>8be544cfdb448c10ca1da0da4b961909</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_8be544cfdb448c10ca1da0da4b961909</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:07</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>699809434</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>69515007dbc48c10ca1da0da4b961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef75bc80000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>u_twitter_hashtag_user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>5fe544cfab448c10122b7f25dc68a510</update_guid>
+<update_guid_history>5fe544cfab448c10122b7f25dc68a510:699809434</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_twitter_hashtag_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_twitter_hashtag"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_twitter_hashtag&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;claudia.cruz&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-26 19:06:09&lt;/sys_created_on&gt;&lt;sys_id&gt;b3e508cfdb448c10ca1da0da4b96198c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_twitter_hashtag&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_twitter_hashtag_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;claudia.cruz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-26 19:06:09&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-215650812</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>6d515007dbc48c10ca1da0da4b96193e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef768900000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>Twitter Hashtag</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>40f508cf2d448c1098205e1c87f809a6</update_guid>
+<update_guid_history>40f508cf2d448c1098205e1c87f809a6:-215650812</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_trigger_8c60d483dbc48c10ca1da0da4b9619d3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_trigger"><sys_trigger action="INSERT_OR_UPDATE"><application/><calendar/><claimed_by/><document/><document_key/><error_count>0</error_count><job_context>#Thu Sep 26 12:53:05 PDT 2019
+fcScriptName=in the schedule record
+</job_context><job_id display_value="RunScriptJob">81c92ce9c0a8016400e5f0d2f784ea78</job_id><last_error/><log>false</log><maintenance>false</maintenance><max_drift/><name>TwitterSearchJob</name><next_action>2019-09-26 20:02:08</next_action><parent/><priority>100</priority><processing_duration>878</processing_duration><repeat>1970-01-01 01:00:00</repeat><replication_originator>edc69723db5f7f0052cec597059619ef</replication_originator><rollback_context_id/><run_count>1</run_count><run_dayofmonth/><run_dayofweek>1</run_dayofweek><run_month>1</run_month><run_time>1970-01-01 08:00:00</run_time><run_weekinmonth>1</run_weekinmonth><script>var twitter = new TwitterSearchUtil();&#13;
+twitter.execute();</script><state>0</state><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:52:08</sys_created_on><sys_id>8c60d483dbc48c10ca1da0da4b9619d3</sys_id><sys_mod_count>7</sys_mod_count><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:55:40</sys_updated_on><system_id/><trigger_class>DEFAULT</trigger_class><trigger_type>1</trigger_type><upgrade_safe>false</upgrade_safe></sys_trigger></record_update>]]></payload>
+<payload_hash>-2087377771</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>6d515007dbc48c10ca1da0da4b961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6f24b6a20000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>TwitterSearchJob</target_name>
+<type>Schedule Item</type>
+<update_domain>global</update_domain>
+<update_guid>74415cc380c48c1052a34a1171fc741f</update_guid>
+<update_guid_history>74415cc380c48c1052a34a1171fc741f:-2087377771</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_666f3a62dbc00c10ca1da0da4b961910</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.TwitterSearchUtil&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;TwitterSearchUtil&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var TwitterSearchUtil = Class.create();
+TwitterSearchUtil.prototype = {
+	initialize: function() {
+	},
+
+	execute: function(){
+		var token = this.getAuthorizationBearer();
+		var terms = this.getHashTags();
+		for (var i = 0; i &lt; terms.length; i++) {
+			var term = terms[i];
+			var client = this.getSearchResults(token, term);
+			this.getResponseBody(client);
+		}
+	}, 
+
+	getAuthorizationBearer: function() { 
+		var client = new sn_ws.RESTMessageV2('Get Twitter OAuth Token', 'post');
+		var response = client.execute().getBody();
+		var token = (new JSONParser()).parse(response).access_token;
+		gs.log("token" + token);
+		return 'Bearer ' + token;  
+	},
+
+	getSearchResults: function(token, query) {  
+		var client = new sn_ws.RESTMessageV2('Get Twitter Search', 'get');
+		client.setStringParameter('token', token);
+		client.setStringParameter('q', query);
+		return client;
+	},
+
+	getResponseBody: function(client){
+		var social_channel = this.getSocialChannel();
+		var response = client.execute().getBody();
+		var result = JSON.parse(response);
+		result.statuses.forEach(function(key){
+			var URL = 'https://www.twitter.com/status/' + key.id_str;
+			var PROFILE_URL = 'https://www.twitter.com/'+  key.user.screen_name;
+			var DATE = new GlideTime(Date.parse(key.created_at));
+			var gr = new GlideRecord('sn_app_cs_social_social_log');
+			if(!gr.get('external_id', key.id_str)){
+				gr.initialize();
+				gr.setValue('external_id', key.id_str);
+				gr.setValue('message', key.text);	
+				gr.setValue('social_url', URL);
+				var grProfile =  new GlideRecord('sn_app_cs_social_social_profile');
+				if(!grProfile.get('social_id', key.user.screen_name )){
+					grProfile = new GlideRecord('sn_app_cs_social_social_profile');
+					grProfile.initialize();
+					grProfile.setValue('channel' , social_channel );
+					grProfile.setValue('social_id', key.user.screen_name);
+					grProfile.setValue(' profile_url', PROFILE_URL);
+					grProfile.insert();
+				}	
+				var SOCIAL_PROFILE = grProfile.getUniqueValue();	
+				gr.setValue('social_profile', SOCIAL_PROFILE);
+				gr.insert();
+			}
+		});
+
+	},
+
+	getSocialChannel: function(){
+		var grChannel = new GlideRecord('sn_app_cs_social_social_channel');
+		grChannel.addQuery('name' , 'CONTAINS', 'Twitter');
+		grChannel.query();
+		grChannel.next();
+		return grChannel.getUniqueValue();
+	},
+
+
+	getHashTags: function() {
+		var terms = [],
+		gr = new GlideRecord('u_twitter_hashtag');
+		gr.query();
+		while (gr.next()){
+			terms.push(gr.getValue('u_hashtag'));
+		}
+		return terms;
+	},
+
+	type: 'TwitterSearchUtil'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;claudia.cruz&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-25 19:20:36&lt;/sys_created_on&gt;&lt;sys_id&gt;666f3a62dbc00c10ca1da0da4b961910&lt;/sys_id&gt;&lt;sys_mod_count&gt;69&lt;/sys_mod_count&gt;&lt;sys_name&gt;TwitterSearchUtil&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_666f3a62dbc00c10ca1da0da4b961910&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;claudia.cruz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-26 19:28:25&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1900813155</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>a1515007dbc48c10ca1da0da4b961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6f0bc44c0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>TwitterSearchUtil</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>fd0bcc0b09848c10af6f22d9dd30d5f1</update_guid>
+<update_guid_history>fd0bcc0b09848c10af6f22d9dd30d5f1:-1900813155,f40b004b53848c10e439df4f4f314407:981341489,6ecac00b03848c1010353f2fb9c37533:-1900813155,f1b9c48762848c10cdef4cec010ee7de:-1955673638,a189c08717848c10037dd91b24f9705a:1320671774,214988478b848c1076dc78dac0c597d8:275131646,41e88c07f6848c10990c74b5125f2ca7:1521190371,0e96c803ab848c10832254934ccc7f05:968954155,fef6f7b69b048c10fa42a9fb909304a0:-1296897963,3035b7f2f6048c10f940e4eba2f23c9a:1020553130,1854b3b245048c10b3822b69a3f9c391:-63825962,baa2b3fe29c08c10d912930a89347827:372822607,d5223b7eb1c08c10a318060c933cf3e4:1588486887,4b007fbac4c08c102af2d77482615c11:-1292200733,315ea7b68ac08c102ccba5b6ae8b8ed3:597438295,0f9d6f36e4c08c1046add4c26911fd04:1637719861,130d2ff27dc08c1031e4ad478e1d90c8:1758523961,8787e3ba2b808c10ee9348c803f3ec28:215005246,6d562f3adc808c10abc9fc9957bc241f:-796763922,59b527f6f2808c1030d31eef1668faf8:-726977489,a084677680808c106537a743e0b6a9a5:-939613829,e7c3233661808c109581872c707c271d:1210312992,0673abf23d808c10446b8003a266d0d6:-677430376,c9bb1bb636408c109af5ddade4c08f9c:-1296755624,7f1a9bf208408c10876ef963269eb454:440950250,da895bb21c408c10b13561b3d4711972:-659764134,83485732a1408c103e8eef28faa59a9a:-595232097,b7081ffe88008c101502b9fe50a5dac5:-1176773089,13e6977ed8008c10d1979115414b77c2:26761795,4df5533e71008c105c5d602bb1c302a0:55556017,b9a5d7fac2008c103755a58ac9fb733c:2078658463,49b4db7a86008c10c55b5be67ebfce67:-1761408463,a6d78c7eb7880c108c16b5fd1aa69a4f:639434080,e7c7c87ea6880c1026489e5f729423d5:776570913,bee584ba3e880c1092f7c3d5f4a66ab1:493238881,9525c83a86880c10984eb33c10c1cead:2069623051,3e94403a2a880c1003c33ba369a9791e:-1523176275,5344c4f68e880c1019ced8445cf6109a:-822321475,85330c3664880c107288134fd974fa3b:1893060877,4f1248f29f880c101c2a2aa5c1897197:799910589,9b91c8b220880c102d246e186b7ef7bf:1274253853,1451c0b2fb880c1074baa544a7c35edc:-1053417175,f9308cfe08480c10fb959b84761c7c8e:1341089065,6fcefb2eb7480c101cacb4031fa7aef5:-160268823,16db3f2acb480c1026ab0827a8aaf713:1464647782,50fa37e60e480c104f6c80b1976b95be:-187768337,ddd97766f7480c10b8a3c3ddf58f3f3c:-694994543,f08ae7ea11c40c1043c64465435e832b:-533894711,1f172f2633c40c108a57c4826865539d:202720052,c017a36663c40c106d414020f6f8f28a:-6627360,7855aba2f6c40c10880a97bbcea7daeb:-861109408,aba4e762b5c40c10233c0b4df92d245b:194581774,eca4e762cdc40c109063fdc884cfc652:-771298205,7683a7eee4840c10640dafa39f6bb931:558182042,7cd22f6e53840c10f405308c93675d0a:785286607,1362e76efe840c10fd6bf112c9d7d60d:-1562630067,9500676a1e840c100c43247227759f44:905270703,996f932aa2840c102b01720e14cc2d8f:-987732421,bace93e6c4840c109ddd8fdd7e8f8c22:-8620578,c25d932683840c1075e68cda9a6a43f4:278470475,ff8c9fa2c2840c10ab2413f8b3ad3b24:1744330821,4ffb93a281840c10dcc30326df42159e:1168106821,6f5b93624c840c10ea7c7f4e05d70dd3:-557072094,2dc297a2c4440c1020539338aef2d54d:-45339708,35d3876ae6c00c1038971fa6347e4418:-2058156124,54b20be668c00c100cdfc13309abe647:-1017775676,1b52cba6b4c00c10c6f243947300a6c9:854434037,09010b2699c00c1050b5e307d55e226a:577739178,3ddf36a258c00c1071bada06ecfb0da1:1661256153,29af7e62e6c00c10c88ed29ced19bf3b:333099440</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_twitter_hashtag__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Twitter Hashtag" language="en" table="u_twitter_hashtag"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Twitter Hashtag</label><language>en</language><name>u_twitter_hashtag</name><plural>Twitter Hashtags</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:10</sys_created_on><sys_id>f7e508cfdb448c10ca1da0da4b961996</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Twitter Hashtag</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_twitter_hashtag__en</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:10</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1315732221</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>a5515007dbc48c10ca1da0da4b96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef768b40000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>Twitter Hashtag</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>44f508cf45448c10b4bcb8bb58076ca7</update_guid>
+<update_guid_history>44f508cf45448c10b4bcb8bb58076ca7:-1315732221</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_adb68043db848c10ca1da0da4b961932</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="adb68043db848c10ca1da0da4b961932" sys_domain="global" table="u_twitter_hashtag" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_hashtag</element><position>0</position><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:09:34</sys_created_on><sys_id>7db68043db848c10ca1da0da4b9619db</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_twitter_hashtag" sys_domain="global" view="Default view">adb68043db848c10ca1da0da4b961932</sys_ui_section><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:09:34</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_twitter_hashtag</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:09:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>adb68043db848c10ca1da0da4b961932</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_adb68043db848c10ca1da0da4b961932</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:09:34</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-1552730483</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>a5515007dbc48c10ca1da0da4b961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6efa84010000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>Twitter Hashtag</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>35b680431b848c1079d3e5c34b34f9dd</update_guid>
+<update_guid_history>35b680431b848c1079d3e5c34b34f9dd:-1552730483,61b6804359848c10d1fa8504fd8c3936:1839203428</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_5bc504cfdb448c10ca1da0da4b96195c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Twitter Hashtag</label><live_feed_enabled>false</live_feed_enabled><name>u_twitter_hashtag</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:07</sys_created_on><sys_id>5bc504cfdb448c10ca1da0da4b96195c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Twitter Hashtag</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_5bc504cfdb448c10ca1da0da4b96195c</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:07</sys_updated_on><update_access>false</update_access><user_role display_value="u_twitter_hashtag_user" name="u_twitter_hashtag_user">8be544cfdb448c10ca1da0da4b961909</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>-1511033549</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>a9515007dbc48c10ca1da0da4b96193e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef768e00000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>Twitter Hashtag</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>48f508cf69448c100558774a50976aa8</update_guid>
+<update_guid_history>48f508cf69448c100558774a50976aa8:-1511033549</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_e3e508cfdb448c10ca1da0da4b96196c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:09</sys_created_on><sys_id>e3e508cfdb448c10ca1da0da4b96196c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag.u_twitter_hashtag_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_twitter_hashtag">6fe508cfdb448c10ca1da0da4b961965</sys_security_acl><sys_update_name>sys_security_acl_role_e3e508cfdb448c10ca1da0da4b96196c</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:09</sys_updated_on><sys_user_role display_value="u_twitter_hashtag_user" name="u_twitter_hashtag_user">8be544cfdb448c10ca1da0da4b961909</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>788795194</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>a9515007dbc48c10ca1da0da4b961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef763070000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>u_twitter_hashtag.u_twitter_hashtag_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>a7e508cfb6448c10c8a204ae1430aa70</update_guid>
+<update_guid_history>a7e508cfb6448c10c8a204ae1430aa70:788795194</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a7e508cfdb448c10ca1da0da4b961971</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_twitter_hashtag</description><name>u_twitter_hashtag</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:09</sys_created_on><sys_id>a7e508cfdb448c10ca1da0da4b961971</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_a7e508cfdb448c10ca1da0da4b961971</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:09</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1719315882</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>ad515007dbc48c10ca1da0da4b961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef763510000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>u_twitter_hashtag</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>efe508cf4d448c10d96803c07cdf2c74</update_guid>
+<update_guid_history>efe508cf4d448c10d96803c07cdf2c74:1719315882</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_twitter_hashtag_u_hashtag_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_hashtag" label="Hashtag" language="en" table="u_twitter_hashtag"><sys_documentation action="INSERT_OR_UPDATE"><element>u_hashtag</element><help/><hint/><label>Hashtag</label><language>en</language><name>u_twitter_hashtag</name><plural>Hashtags</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:47</sys_created_on><sys_id>81160003db848c10ca1da0da4b9619f1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Hashtag</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_twitter_hashtag_u_hashtag_en</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:47</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-365280451</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>e1515007dbc48c10ca1da0da4b96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef7fae70000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>Twitter Hashtag.Hashtag</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>c916400394848c10cad6c5d4ccb88920</update_guid>
+<update_guid_history>c916400394848c10cad6c5d4ccb88920:-365280451</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_module_abe508cfdb448c10ca1da0da4b961962</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Twitter Hashtag">23e508cfdb448c10ca1da0da4b961960</application><filter/><name>Twitter Hashtags</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>u_twitter_hashtag_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>abe508cfdb448c10ca1da0da4b961962</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Twitter Hashtags</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_module_abe508cfdb448c10ca1da0da4b961962</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:08</sys_updated_on><table>u_twitter_hashtag</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+<payload_hash>599099292</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>e1515007dbc48c10ca1da0da4b961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef760680000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>Twitter Hashtags</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>ebe508cf87448c10a94762fe2e0acc64</update_guid>
+<update_guid_history>ebe508cf87448c10a94762fe2e0acc64:599099292</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_9be5c4cfdb448c10ca1da0da4b9619f8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Twitter Hashtag">5fe5c4cfdb448c10ca1da0da4b9619f4</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Twitter Hashtags</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_twitter_hashtag</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>u_twitter_hashtag_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9be5c4cfdb448c10ca1da0da4b9619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Twitter Hashtags</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_9be5c4cfdb448c10ca1da0da4b9619f8</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:08</sys_updated_on><timeline_page/><title>Twitter Hashtags</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>-2087001640</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>e5515007dbc48c10ca1da0da4b96193e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef75f950000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>Twitter Hashtags</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>a7e5c4cff6448c1085b8b7eb07b17ffb</update_guid>
+<update_guid_history>a7e5c4cff6448c1085b8b7eb07b17ffb:-2087001640</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_afe508cfdb448c10ca1da0da4b961975</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:09</sys_created_on><sys_id>afe508cfdb448c10ca1da0da4b961975</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag.u_twitter_hashtag_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_twitter_hashtag">a7e508cfdb448c10ca1da0da4b961971</sys_security_acl><sys_update_name>sys_security_acl_role_afe508cfdb448c10ca1da0da4b961975</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:09</sys_updated_on><sys_user_role display_value="u_twitter_hashtag_user" name="u_twitter_hashtag_user">8be544cfdb448c10ca1da0da4b961909</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1504316379</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>e5515007dbc48c10ca1da0da4b961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef763a00000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>u_twitter_hashtag.u_twitter_hashtag_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>b7e508cf22448c10a4827c28bc70b279</update_guid>
+<update_guid_history>b7e508cf22448c10a4827c28bc70b279:1504316379</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_77e508cfdb448c10ca1da0da4b96197a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_twitter_hashtag</description><name>u_twitter_hashtag</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 19:06:09</sys_created_on><sys_id>77e508cfdb448c10ca1da0da4b96197a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_twitter_hashtag</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_77e508cfdb448c10ca1da0da4b96197a</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 19:06:09</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1250416102</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>e9515007dbc48c10ca1da0da4b961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6ef763dc0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table>u_twitter_hashtag</table>
+<target_name>u_twitter_hashtag</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>bfe508cf17448c10b85653f9360c5b7d</update_guid>
+<update_guid_history>bfe508cf17448c10b85653f9360c5b7d:1250416102</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_118223b2db808c10ca1da0da4b961979</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>token</name><rest_message_function display_value="get">ee596e00eb12310065deac6aa206fe92</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-26 16:31:54</sys_created_on><sys_id>118223b2db808c10ca1da0da4b961979</sys_id><sys_mod_count>0</sys_mod_count><sys_name>token</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_118223b2db808c10ca1da0da4b961979</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-26 16:31:54</sys_updated_on><type>string</type><value>bearer AAAAAAAAAAAAAAAAAAAAAHij%2BAAAAAAAu33OhintFt99t5C3fEmvO7F%2Fy2w%3DTvC3y2DCGvaTE5zK1Iacz88tSUTk4gMvGacZHXRFbKIOTn9zwD</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>359530036</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>ed515007dbc48c10ca1da0da4b96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6e6a2c560000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>token</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>50a223b2f9808c10789ba00bcd1839ea</update_guid>
+<update_guid_history>50a223b2f9808c10789ba00bcd1839ea:359530036</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>u_pa_twitter_context_e6b793eadb440c10ca1da0da4b961911</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="u_pa_twitter_context"><u_pa_twitter_context action="INSERT_OR_UPDATE"><name>#mynowfeedback</name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-25 21:06:33</sys_created_on><sys_id>e6b793eadb440c10ca1da0da4b961911</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-25 21:06:33</sys_updated_on></u_pa_twitter_context></record_update>]]></payload>
+<payload_hash>-1105347628</payload_hash>
+<remote_update_set display_value="Twitter Integration">ed515007dbc48c10ca1da0da4b96193d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-26 19:55:58</sys_created_on>
+<sys_id>ed515007dbc48c10ca1da0da4b961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d6a3f3fdf0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-26 19:55:58</sys_updated_on>
+<table/>
+<target_name>#mynowfeedback</target_name>
+<type>Twitter Context</type>
+<update_domain>global</update_domain>
+<update_guid>e9e753ea1f440c10a547bc2f8ccee10f</update_guid>
+<update_guid_history>e9e753ea1f440c10a547bc2f8ccee10f:-1105347628</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
