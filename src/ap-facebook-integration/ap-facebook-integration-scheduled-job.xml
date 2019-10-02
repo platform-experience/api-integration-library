@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-10-02 20:31:41">
+<sysauto_script action="INSERT_OR_UPDATE">
+<active>true</active>
+<condition/>
+<conditional>false</conditional>
+<name>Facebook/Twitter Integration</name>
+<run_as display_value="Brian Clauzel">f734dce8db45770028c873568c961912</run_as>
+<run_as_tz/>
+<run_dayofmonth>1</run_dayofmonth>
+<run_dayofweek>1</run_dayofweek>
+<run_period>1970-01-01 00:03:00</run_period>
+<run_start>2019-04-24 18:54:51</run_start>
+<run_time>1970-01-01 08:00:00</run_time>
+<run_type>periodically</run_type>
+<script><![CDATA[var facebook = new FacebookVisitorPostService();
+var result = facebook.getPosts(); 
+
+result.data.forEach(function(res) {
+	var socialID = res.id.split('_', 1);
+	var url = 'https://www.facebook.com/' + res.id.replace('_', '/posts/');	
+	var grSocial = new GlideRecord('sn_app_cs_social_social_log');
+	if(!grSocial.get('u_social_id', res.id)){
+		grSocial.initialize();
+		grSocial.setValue('message', res.message);
+		grSocial.setValue('u_social_id', res.id);
+		grSocial.setValue('social_url', url);
+		grSocial.setValue('u_social_created', res.created_time);
+		var grProfile = GlideRecord('sn_app_cs_social_social_profile');
+		if(grProfile.get('social_id', socialID.toString())) {
+			grSocial.setValue('social_profile', grProfile.getUniqueValue());
+		}
+		grSocial.insert();
+	}
+});
+
+var twitterCall = new TwitterAPI();
+var jsonObject = twitterCall.getTweets();
+var getSocialProfile;
+
+//var gt = new GlideTime(Date.parse("Fri Apr 26 22:04:43 +0000 2019"));
+
+var twitterID = '3ad0a1f3db5477006df1db184b9619d3';
+jsonObject.statuses.forEach(function(key){
+	var gr = new GlideRecord('sn_app_cs_social_social_log');
+	var url = 'https://www.twitter.com/statuses/' + key.id_str;
+	var currDate = new GlideTime(Date.parse(key.created_at));
+	//gs.info("Date" + currDate);
+	if(!gr.get('u_social_id', key.id_str)){
+		gr.initialize();
+		gr.setValue('u_social_id', key.id_str);
+		gr.setValue('message', key.text);	
+		gr.setValue('social_url', url);
+		gr.setValue('u_social_created', currDate);
+		if(!gr.social_profile){
+			var grProfile = new GlideRecord('sn_app_cs_social_social_profile');
+			grProfile.initialize();
+			grProfile.setValue('channel' , twitterID );
+			grProfile.setValue('social_id', key.user.screen_name);
+			grProfile.insert();
+			getSocialProfile = grProfile.getUniqueValue();					
+		}
+		gr.setValue('social_profile', getSocialProfile);
+		gr.insert();
+
+	}
+});]]></script>
+<sys_class_name>sysauto_script</sys_class_name>
+<sys_created_by>brian.clauzel</sys_created_by>
+<sys_created_on>2019-04-24 18:55:47</sys_created_on>
+<sys_id>4fe43d09db413b00f2263ecf9d961926</sys_id>
+<sys_mod_count>36</sys_mod_count>
+<sys_name>Facebook/Twitter Integration</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sysauto_script_4fe43d09db413b00f2263ecf9d961926</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-05-03 02:33:17</sys_updated_on>
+<upgrade_safe>false</upgrade_safe>
+</sysauto_script>
+</unload>
