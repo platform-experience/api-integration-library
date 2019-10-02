@@ -1,12 +1,12 @@
-# JIRA Integration
+# Twilio Integration
 
 ## Description
 
-A simple JIRA integration that renders a list of issues assigned to you.
+A simple Twilio integration that renders a button that allows you to send a text message notifcation.
 
 ## Screenshot
 
-![JIRA Integration](https://raw.githubusercontent.com/platform-experience/api-integration-library/master/src/ap-jira-integration/images/ap-jira-integration.png)
+![Twilio Integration](https://raw.githubusercontent.com/platform-experience/api-integration-library/master/src/ap-jira-integration/images/ap-jira-integration.png)
 
 ## Additional Information/Notes
 

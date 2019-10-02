@@ -1,8 +1,9 @@
 {
   "active": true,
   "category": "General",
-  "common-name": "Twilio Integration",
+  "common-name": "Facebook Integration",
   "compatibility": [
+    "Jakarta",
     "Kingston",
     "London",
     "Madrid"
@@ -13,12 +14,11 @@
   "keywords": [
     "API",
     "API Integration",
-    "Notify",
-    "Twilio"  
+    "Facebook"
   ],
-  "name": "notify-twilio-integration",
+  "name": "ap-facebook-integration",
   "publishing-goal": "Update set",
-  "solution-details": "A simple Twilio integration that renders a button that allows you to send a text message notifcation.",
+  "solution-details": "A simple Facebook integration for creating a Case and Social Log record when a user posts something public to a facebook page",
   "type": "API Integration",
   "version": "1.0.0"
 }
